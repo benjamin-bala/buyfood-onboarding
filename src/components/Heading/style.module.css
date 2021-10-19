@@ -1,0 +1,14 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.heading h2 {
+  font-size: var(--text-bg);
+  color: var(--dark);
+  text-transform: capitalize;
+}
+.heading p {
+  font-size: var(--text-sm);
+  color: var(--paragraph);
+}

@@ -1,0 +1,5 @@
+.heading_sm {
+  font-weight: var(--medium);
+  font-size: var(--text-sm);
+  color: var(--dark);
+}

@@ -1,0 +1,17 @@
+.button {
+  color: var(--white);
+  padding: 1.5rem 3rem;
+  border-radius: 0.8rem;
+  margin: 1.3rem 0;
+  width: max-content;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: var(--text-sm);
+  text-transform: capitalize;
+}
+.primary {
+  background: var(--blue);
+}
+.secondary {
+  background: var(--red);
+}

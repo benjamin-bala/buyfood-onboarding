@@ -1,13 +1,125 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+*,
+*::before,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: inherit;
+  cursor: default;
+}
+:root {
+  /* Colors */
+  --primary: #5257f5;
+  --blue: #006aff;
+  --gray-border: rgba(20, 23, 55, 0.1);
+  --dark-gray: #f5f6fa;
+  --light-blue: #dceaff;
+  --light-blue-bg: #e9eef4;
+  --dark: #141737;
+  --inactive: #e4e9ef;
+  --inactive-text: #a5b4cb;
+  --white: #fff;
+  --paragraph: #7d8da7;
+  --red: #ff6774;
+
+  /* sizes */
+  --bold: 700;
+  --medium: 500;
+  --text-sm: 1.4rem;
+  --text: 1.8rem;
+  --text-bg: 2.6rem;
+  --text-xsm: 1.2rem;
+  --rounded: 1.2rem;
+  --rounded-sm: 0.31rem;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "DM Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+input {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input:focus,
+  input {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 61%;
+  }
+}
+body {
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  background: none;
+  cursor: grab;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--inactive);
+  border-radius: 5px;
+}
+.fadein {
+  -webkit-animation: fadein 0.3s;
+  -moz-animation: fadein 0.3s;
+  -ms-animation: fadein 0.3s;
+  -o-animation: fadein 0.3s;
+  animation: fadein 0.3s;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

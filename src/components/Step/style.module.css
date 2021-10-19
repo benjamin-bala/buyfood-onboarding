@@ -1,0 +1,4 @@
+.step {
+  color: var(--inactive-text);
+  font-size: var(--text-sm);
+}

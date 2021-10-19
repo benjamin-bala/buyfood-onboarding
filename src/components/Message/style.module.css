@@ -1,0 +1,59 @@
+.message {
+  background: var(--light-blue-bg);
+  padding: 2.2rem;
+  display: grid;
+  grid-template-columns: 3rem 9fr;
+
+  border-radius: var(--rounded);
+}
+
+.message_title,
+.message_toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message_title {
+  cursor: pointer;
+}
+
+.message_title span {
+  color: var(--dark);
+  font-size: var(--text-sm);
+  font-weight: var(--medium);
+}
+.message_toggle {
+  cursor: pointer;
+}
+.message_toggle span {
+  color: var(--primary);
+  margin-right: 0.4rem;
+  font-size: var(--text-xsm);
+  cursor: pointer;
+}
+.rotate {
+  transition: all 0.4ms ease;
+  transform: rotate(180deg);
+}
+.message_info {
+  font-size: var(--text-sm);
+  color: var(--dark);
+  margin-top: 0.9rem;
+}
+.hide_message {
+  display: none;
+}
+.option_item {
+  display: flex;
+  margin-top: 1.1rem;
+}
+.option_tick {
+  margin-right: 0.6rem;
+}
+.option_tick img {
+  width: 10px;
+}
+.option_item span {
+  text-transform: capitalize;
+}

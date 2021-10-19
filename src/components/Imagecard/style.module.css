@@ -1,0 +1,16 @@
+.image_card {
+  height: 100vh;
+  background: #f3e8c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image_card img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .image_card {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+.dropdown_value {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--inactive);
+  border-radius: var(--rounded);
+  padding: 1.6rem;
+  cursor: pointer;
+  font-size: var(--text-sm);
+}
+.dropdown_option {
+  position: relative;
+  border: 1px solid var(--inactive);
+  padding: 1.6rem;
+  font-size: var(--text-sm);
+}
+.dropdown_option p {
+  padding: 0.7rem 0;
+  cursor: pointer;
+  border-bottom: 1px solid var(--inactive);
+}
+.dropdown_option p:last-child {
+  border: none;
+}
